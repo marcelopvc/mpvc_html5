@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        #heading{
+            background: rgba(0, 0, 0, 0.7); /*a = alpha, que seria a opacidade*/
+        }
+
+        body{
+            background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/dd4dfce3-1a39-4b1a-8e19-b7242da17e68/abe2803b-1256-4f65-a1bd-7fd4d4ad997c/BR-pt-20240527-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+            background-size: cover;
+            background-position: top center;
+        }
+
+
+        #heading div{
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto; /*o significado de cada valor é igual ao padding*/
+        }
+
+        #heading .h1{
+            /*
+            padding-top: 15px;
+            padding-left: 15px;
+            padding-bottom: 15px;*/
+            padding: 15px 0; /* em cima, embaixo, direita e esquerda */
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        #heading a{
+            color: white;
+            text-decoration: none; /* retira o sublinhado do link*/
+            font-family: sans-serif;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header id="heading">
+        <div>
+            <h1 class="h1">
+                <a href="#">Netflix</a>
+            </h1>
+
+            <h2 class="h1">
+                <a href="#">Entrar</a>
+            </h2>
+        </div>
+    </header>
+</body>
+</html>
