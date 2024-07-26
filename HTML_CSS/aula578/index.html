@@ -1,3 +1,4 @@
+<!-- Contempla as aulas do 578 para o 580 -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -52,7 +53,109 @@
         <p>
             <label class="label-nome" for="data">Data:</label>
             <!-- name é o seletor que é utilizado no back end -->
-            <input type="date" id="data" name="data">
+            <input type="date" id="data" name="data" value="2024-04-20">
+        </p>
+
+        <p>
+            <label class="label-nome" for="data-time">Datetime:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="datetime-local" id="data-time" name="data-time" value="2024-04-20T10:00">
+        </p>
+
+        <p>
+            <label class="label-nome" for="time">Datetime:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="time" id="time" name="time" value="10:00:01">
+        </p>
+
+        <p>
+            <label class="label-nome" for="cor">Cor preferida:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="color" id="cor" name="cor" value="#003d66">
+        </p>
+
+        <p>
+            <label class="label-nome" for="email">Seu email:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="email" id="email" name="email" placeholder="example@email.com">
+        </p>
+
+        <p>
+            <label class="label-nome" for="arq">Sua foto:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="file" id="arq" name="arq" accept=".png" multiple>
+        </p>
+
+        <p>
+            <label class="label-nome" for="nbr">Número preferido:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="number" id="nbr" name="nbr" min="10" max="50" step="5">
+        </p>
+
+        <p>
+            <label class="label-nome" for="pwd">Digite sua senha:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="password" id="pwd" name="pwd" placeholder="Password">
+        </p>
+
+        <p>
+            <label class="label-nome" for="range">Range:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <!--input type="range" id="range" name="range" min="0" max="10" step="2"-->
+            <input type="range" id="range" name="range" list="tickmarks">
+
+            <datalist id="tickmarks">
+                <option value="0" label="0%"></option>
+                <option value="10"></option>
+                <option value="20"></option>
+                <option value="30"></option>
+                <option value="40"></option>
+                <option value="50" label="50%"></option>
+                <option value="60"></option>
+                <option value="70"></option>
+                <option value="80"></option>
+                <option value="90"></option>
+                <option value="100" label="100%"></option>
+            </datalist>
+        </p>
+
+        <p>
+            <label class="label-nome" for="url">Sua URL:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="url" id="url" name="url" placeholder="URL">
+        </p>
+
+        <p>
+            <label class="label-nome" for="search">Search:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+            <input type="search" id="search" name="search" placeholder="Buscar...">
+        </p>
+
+        <p>
+            <label class="label-nome" for="select">Seelecione alguma opção:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+             <select name="select" id="select" multiple>
+                <optgroup label="Teste">
+                    <option value="qualquer" label="Isso é diferente do valor" disabled></option>
+                    <option value="qualquer2" label="Isso é diferente do valor2"></option>
+                    <option value="qualquer3" label="Isso é diferente do valor3" selected></option>
+                    <option value="qualquer4" label="Isso é diferente do valor4"></option>
+                </optgroup>
+                <optgroup label="Teste2">
+                    <option value="qualquer" label="Isso é diferente do valor" disabled></option>
+                    <option value="qualquer2" label="Isso é diferente do valor2"></option>
+                    <option value="qualquer3" label="Isso é diferente do valor3" selected></option>
+                    <option value="qualquer4" label="Isso é diferente do valor4"></option>
+                </optgroup>
+             </select>
+        </p>
+
+        <p>
+            <label class="label-nome" for="textarea">Área de Texto:</label>
+            <!-- name é o seletor que é utilizado no back end -->
+             <textarea name="textarea" id="textarea" rows="3" cols="9">
+               Teste 
+             </textarea>
         </p>
 
         <p>
