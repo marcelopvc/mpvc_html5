@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.grid .col{
+    display: block; /*o elemento sempre ocupa a tela inteira, ja o inline nao*/
+    width: 150px;
+    height: 150px;
+    background: red;
+    margin: 30px;
+}
