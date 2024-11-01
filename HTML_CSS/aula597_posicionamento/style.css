@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.pai{
+
+}
+
+.filha1, .filha2{
+    width: 300px;
+    height: 300px;
+    background: red;
+    margin: 10px;
+    position: static;
+}
+
+.filha2{
+    position: fixed; /*nao muda de posicao, independente do que acontecer no viewport*/
+    background: yellow;
+    top: 30%;
+    right: 0;
+    z-index: 1;
+}
+
+.filha1{
+
+}
+
+.filha3{
+    background: blue;
+    position: relative;
+    top: 100px; /*esta sendo em relacao a outra div, ao inves de ser em relacao ao viewport*/
+    left: 100px;
+}
+
+/*
+.filha2{
+    position: absolute;
+    background: yellow;
+    z-index: 1; /*camada do plano z do plano cartesiano*/
+/*}*/
+
+/*
+.filha1{
+    position: absolute;
+    top: 50%;
+    margin-top: -150px; /*devido ao fato de que o fica centralizado, levando em consideracao os 50% eh a extremidade esquerda superior*/
+    /*
+    left: 50%;
+    margin-left: -150px; /*devido ao fato de que o fica centralizado, levando em consideracao os 50% eh a extremidade esquerda superior*/
+    /*z-index: 2; /*camada do plano z do plano cartesiano*/
+/*}*/
+
+
+.outra{
+    position: absolute; /*nao acontece nada, porque ele respeita o relative do filha3*/
+    font-size: 50px;
+    background: white;
+    top: 50px; /*eh em relacao ao filha3, ao inves do viewport*/
+    left: 50px; 
+}
